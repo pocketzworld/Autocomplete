@@ -175,7 +175,7 @@ public final class Autocomplete<T> implements TextWatcher, SpanWatcher {
         popup = new AutocompletePopup(source.getContext());
         popup.setAnchorView(source);
         popup.setGravity(Gravity.START);
-        popup.setModal(false);
+        popup.setModal(true);
         popup.setBackgroundDrawable(builder.backgroundDrawable);
         popup.setElevation(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, builder.elevationDp,
                 source.getContext().getResources().getDisplayMetrics()));
